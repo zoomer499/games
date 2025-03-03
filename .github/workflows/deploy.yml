@@ -20,12 +20,14 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+        working-directory: solitaire  # ✅ Указываем путь к игре
 
       - name: Build Project
         run: npm run build
+        working-directory: solitaire  # ✅ Указываем путь к игре
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./solitaire/dist  # ✅ Указываем путь к собранным файлам
