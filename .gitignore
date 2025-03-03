@@ -1,1 +1,33 @@
-node_modules
+# Node.js dependencies
+node_modules/
+package-lock.json
+solitaire/package-lock.json
+
+# Parcel cache & build files
+.parcel-cache/
+dist/
+
+# macOS system files
+.DS_Store
+
+# Logs & debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode settings (если используешь)
+.vscode/
+
+# IDE & Editor files
+.idea/    # WebStorm/PyCharm
+*.swp     # Vim swap files
+*.swo     # Vim swap files
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables (если планируется)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
